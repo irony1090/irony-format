@@ -1,4 +1,4 @@
-## irony Toolbox
+## irony Format
 ---
 ### My collection of useful JavaScript utilities.
 ## Features
