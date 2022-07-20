@@ -36,7 +36,7 @@ const example_1 = createUuid({ length: 24 });
 const example_2 = createUuid({ length: 24, prefix: 'PRODUCT-' });
 const example_3 = createUuid({ length: 24, suffix: ':USER' });
 const example_4 = createUuid({ length: 24, prefix: 'PRODUCT-', suffix: ':USER' });
-const example_5 = createUuid({ length: 3, suffix: 'PRODUCT-' });
+const example_5 = createUuid({ length: 3, prefix: 'PRODUCT-' });
 const example_6 = createUuid({ length: 3, suffix: ':USER' });
 
 console.log( example_1 ) // '4b0ab5ca4c2940a08002ce3c' **length is 24**
