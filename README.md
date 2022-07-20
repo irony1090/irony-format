@@ -111,6 +111,7 @@ const arrC = [ 3, 2, 1 ]
 console.log( objA === objB ) // objA and objB is false
 console.log( JSON.stringify(objA) === JSON.stringify(objB) ) // objA and objB is true
 console.log( JSON.stringify(objA) === JSON.stringify(objC) ) // objA and objC is false
+console.log( equals(objA, objC) ) // objA and objC is true
 console.log( equals(arrA, arrB) ) // arrA and arrB is true
 console.log( equals(arrA, arrC) ) // arrA and arrC is false
 console.log( equals(1, 1) ) // is true
