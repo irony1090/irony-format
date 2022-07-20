@@ -76,8 +76,8 @@ console.log( numberTodataSize(exceed) ) // '1024.00 PB'
 #### HideTextOption
 - text: string   
   Input string
-- excludeLength: number
-  Text number to hide
+- excludeLength: number   
+  String numbers that will not be erased
 - start?: 'left'|'right'   
   Starting cursor position.  
   default value 'left'
