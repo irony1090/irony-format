@@ -55,11 +55,11 @@ console.log( example_6 ) // ':US' **length is 3**
 import { numberTodataSize } from '@irony0901/format';
 
 const kbSize = 1024;
-const mbSize = KBSize * 1024;
-const gbSize = MBSize * 1024;
-const tbSize = GBSize * 1024;
-const pbSize = TBSize * 1024;
-const exceed = PBSize * 1024;
+const mbSize = kbSize * 1024;
+const gbSize = mbSize * 1024;
+const tbSize = gbSize * 1024;
+const pbSize = tbSize * 1024;
+const exceed = pbSize * 1024;
 
 console.log( numberTodataSize(kbSize) ) // '1.00 KB'
 console.log( numberTodataSize(mbSize) ) // '1.00 MB'
