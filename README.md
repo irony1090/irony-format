@@ -15,7 +15,7 @@ $ yarn add @irony0901/format
 * [numberTodataSize](#numberTodataSize)
 * [hideText](#hideText)
 * [equals](#equals)
-* [parseTel](#parseTel)
+* [parseTel](#parseTel) **deprecated**. (Use **[this](https://github.com/irony1090/dynamic-text-mask)** instead)
 
 ## createUuid
 ### createUuid( option: CreateUuidOption )
@@ -120,59 +120,8 @@ console.log( equals(1, '1') ) // is false
 ```
 
 ## parseTel
-### parseTel( tel: string ): ParseTel
----
-#### ParseTel
-  - international: string   
-  International number
-  - format: string[]   
-  Formatting array. Up to 3 elements
-  - fullFormat: string   
-  Input String
+### Use [this](https://github.com/irony1090/dynamic-text-mask) instead
 
----
----
-**Examples**
-``` javascript
-import { parseTel } from '@irony0901/format';
-
-console.log( format.parseTel('01012345678') )
-/**
- * {
- *  international: null,
- *  format: [ '010', '1234', '5678' ],
- *  fullFormat: '010-1234-5678'
- * }
-**/
-
-console.log( format.parseTel('010-1234-5678') )
-/**
- * {
- *   international: null,
- *   format: [ '010', '1234', '5678' ],
- *   fullFormat: '010-1234-5678'
- * }
-**/
-
-console.log( format.parseTel('(12)01012345678') )
-/**
- * {
- *   international: '(+12)',
- *   format: [ '010', '1234', '5678' ],
- *   fullFormat: '(+12)010-1234-5678'
- * }
-**/
-
-console.log( format.parseTel('01-01234-5678') )
-/**
- * {
- *   international: null,
- *   format: [ '01', '0123', '5678' ],
- *   fullFormat: '01-0123-5678'
- * }
-**/
-
-```
 
 ## License
 [MIT](LICENSE)

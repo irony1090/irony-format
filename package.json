@@ -1,6 +1,6 @@
 {
   "name": "@irony0901/format",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "format functions",
   "browser": "dist/index.js",
   "main": "dist/index.cjs.js",
@@ -46,6 +46,6 @@
     "dataSize", 
     "hide", 
     "equals", "compare",
-    "parseTel"
+    "mask", "tel format"
   ]
 }

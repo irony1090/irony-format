@@ -422,17 +422,21 @@ export const numberTodataSize =(size:number)=>{
 }
 
 const TEL_INTERNATIONAL_FORMAT = /^\(\s*\+?\d{1,3}\s*\)/;
-// const TEL_LOCAL_FORMAT = /\d{1,3}/;
-// const TEL_FIRST_FORMAT = /\d{3,4}/;
-// const TEL_SECOND_FORMAT = /\d{3,4}/;
-// const TEL_INIT_FORMAT = /[^\d\+\(\)\-\s]/g;
 const TEL_BOUND_FORMAT = /\s|\-/;
 
+/**To be deleted in the next version
+ * Use [this](https://github.com/irony1090/dynamic-text-mask) instead
+ * @deprecated
+ */
 export type ParseTel = {
   international?: string;
   format: Array<string>;
   fullFormat: string;
 }
+/**To be deleted in the next version
+ * Use [this](https://github.com/irony1090/dynamic-text-mask) instead
+ * @deprecated
+ */
 export const parseTel = (tel: string): ParseTel => {
   if( !tel )
     return null;
@@ -485,6 +489,10 @@ export const parseTel = (tel: string): ParseTel => {
   };
 }
 
+/**To be deleted in the next version
+ * Use [this](https://github.com/irony1090/dynamic-text-mask) instead
+ * @deprecated
+ */
 export const equalsTel = (tel1: string, tel2: string ): boolean => {
   if( !tel1 || !tel2 )
     return false;
