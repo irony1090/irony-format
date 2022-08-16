@@ -1,6 +1,6 @@
 {
   "name": "@irony0901/format",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "format functions",
   "browser": "dist/index.js",
   "main": "dist/index.cjs.js",

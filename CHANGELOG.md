@@ -1,6 +1,8 @@
 # IronyFormat change log
 
 ## 0.1.1
+* Add the replacement of the methods that are scheduled to be deleted to format.d.ts
+## 0.1.1
 * Scheduled to delete the methods
   - parseTel
   - equalsTel
