@@ -27,20 +27,20 @@ export default [
       {
         name: moduleName,
         file: pkg.browser,
-        format: "iife",
+        format: "umd",
         // sourcemap: "inline",
-        exports: "named",
+        // exports: "named",
         banner,
-      },
-      {
-        name: moduleName,
-        file: pkg.browser.replace(".js", ".min.js"),
-        format: "iife",
-        // sourcemap: "inline",
-        exports: "named",
-        banner,
-        // plugins: [terser()],
-      },
+      }
+      // {
+      //   name: moduleName,
+      //   file: pkg.browser.replace(".js", ".min.js"),
+      //   format: "iife",
+      //   // sourcemap: "inline",
+      //   exports: "named",
+      //   banner,
+      //   // plugins: [terser()],
+      // },
     ],
     // preserveModules: true,
     plugins: [
